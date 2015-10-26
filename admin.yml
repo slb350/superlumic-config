@@ -3,50 +3,11 @@
 - hosts: 127.0.0.1
   connection: local
 
-  tasks:
-    - name: install personal cask applications
-      homebrew_cask: name={{item}} state=present
-      with_items:
-        - spotify
-        - sketch
-        - imageoptim
-        - imagealpha
-        - sketch-toolbox
-        - littleipsum1
-    - name: create ssh directory
-      become: yes
-      file:
-        path: "{{item}}"
-        state: directory
-        owner: root
-        group: wheel
-        mode: 0777
-      with_items:
-        - /etc/ssh
-    - name: personal ssh config
-      become: yes
-      copy:
-        src: files/ssh_config
-        dest: /etc/ssh_config
-    - name: add to sudoers without password
-      become: yes
-      lineinfile: >
-        dest=/etc/sudoers
-        regexp="{{ item.regexp }}"
-        line="{{ item.line }}"
-        state=present
-        create=true
-      with_items:
-        - { regexp: '^admin', line: 'admin ALL=(ALL) NOPASSWD: ALL' }
-
   roles:
     - profile-all
     - profile-developer
 
   vars:
-    - computername: frontend
-    - git_user_name: Kunstmaan Admin (FE Laptop)
-    - git_user_email: frontend@kunstmaan.be
     - sublime_packages:
         - dest: "SideBarEnhancements"
           repo: "https://github.com/titoBouzout/SideBarEnhancements"
