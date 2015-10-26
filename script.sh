@@ -115,7 +115,7 @@ else
         git clone -q $1 /usr/local/superlumic/config
     else
         setStatusMessage "Getting the default config"
-        git clone -q https://github.com/superlumic/superlumic-config.git /usr/local/superlumic/config
+        git clone -q https://github.com/slb350/superlumic-config.git /usr/local/superlumic/config
     fi
 fi
 
