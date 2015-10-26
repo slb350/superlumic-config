@@ -8,6 +8,7 @@
     - profile-developer
 
   vars:
+    - hostname: sparkzombie
     - computername: sparkzombie
     - git_user_name: Steve Brandon
     - git_user_email: steve@sparkcentral.com
