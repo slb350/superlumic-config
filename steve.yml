@@ -8,6 +8,10 @@
     - profile-developer
 
   vars:
+    - computername: sparkzombie
+    - git_user_name: Steve Brandon
+    - git_user_email: steve@sparkcentral.com
+
     - sublime_packages:
         - dest: "SideBarEnhancements"
           repo: "https://github.com/titoBouzout/SideBarEnhancements"
