@@ -16,3 +16,11 @@
     - git
     - git-extras
     - bash-completion
+    
+- name: install developer cask applications
+  homebrew_cask: name={{item}} state=present
+  with_items:
+    - sequel-pro
+    - java6
+    - java7
+    - java
