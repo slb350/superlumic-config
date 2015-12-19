@@ -13,4 +13,6 @@
     - watch
     - rsync
     - git-flow
-    - ant
+    - git
+    - git-extras
+    - bash-completion
