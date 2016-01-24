@@ -8,8 +8,8 @@
       homebrew_cask: name={{item}} state=present
       with_items:
         - spotify
-        - istat-menus
         - dropbox
+        - chrome
     - name: create ssh directory
       become: yes
       file:
@@ -40,8 +40,8 @@
     - profile-all
     - profile-developer
   vars:
-    - hostname: lilzombie
-    - computername: lilzombie
+    - hostname: zombie
+    - computername: zombie
     - git_user_name: slb350
     - git_user_email: brandon.steve@gmail.com
     - osx_defaults:
