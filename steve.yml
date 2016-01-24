@@ -120,7 +120,3 @@
         key: 'DSDontWriteNetworkStores'
         type: boolean
         value: true
-      - domain: 'com.apple.print.PrintingPrefs'
-        key: 'Quit When Finished'
-        type: boolean
-        value: true
