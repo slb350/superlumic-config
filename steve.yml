@@ -45,17 +45,9 @@
     - git_user_email: brandon.steve@gmail.com
     - osx_defaults:
       - domain: 'com.apple.dock'
-        key: 'autohide'
-        type: boolean
-        value: true
-      - domain: 'com.apple.dock'
         key: 'minimize-to-application'
         type: integer
         value: 1
-      - domain: 'com.apple.dock'
-        key: 'show-process-indicators'
-        type: boolean
-        value: true
       - domain: 'com.apple.dock'
         key: 'orientation'
         type: string
@@ -88,14 +80,6 @@
         key: 'FXPreferredViewStyle'
         type: string
         value: "clmv"
-      - domain: 'NSGlobalDomain'
-        key: 'NSNavPanelExpandedStateForSaveMode'
-        type: boolean
-        value: true
-      - domain: 'NSGlobalDomain'
-        key: 'PMPrintingExpandedStateForPrint'
-        type: boolean
-        value: true
       - domain: 'com.apple.dock'
         key: 'tilesize'
         type: float
@@ -108,15 +92,3 @@
         key: 'autohide-delay'
         type: int
         value: 0
-      - domain: 'NSGlobalDomain'
-        key: 'NSQuitAlwaysKeepsWindows'
-        type: boolean
-        value: false
-      - domain: 'NSGlobalDomain'
-        key: 'ApplePressAndHoldEnabled'
-        type: boolean
-        value: false
-      - domain: 'com.apple.desktopservices'
-        key: 'DSDontWriteNetworkStores'
-        type: boolean
-        value: true
