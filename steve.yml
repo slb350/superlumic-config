@@ -39,8 +39,8 @@
     - profile-all
     - profile-developer
   vars:
-    - hostname: zombie
-    - computername: zombie
+    - hostname: cmb-stevemac
+    - computername: cmb-stevemac
     - git_user_name: slb350
     - git_user_email: brandon.steve@gmail.com
     - osx_defaults:
